@@ -1,3 +1,5 @@
+import { typographyVariants } from './TypographyVariants';
+
 export const theme = {
   dark: {
     primary: '#F65D5D',
@@ -8,4 +10,5 @@ export const theme = {
     secondaryText: '#E5E5E5',
     fontFamily: 'Poppins, "sans-serif"',
   },
+  typographyVariants,
 };

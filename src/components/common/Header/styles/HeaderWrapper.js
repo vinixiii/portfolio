@@ -2,14 +2,22 @@ import styled, { css } from 'styled-components';
 import { breakpointsMediaQuerie } from '../../../../theme/utils/breakpointsMediaQuerie';
 
 export const HeaderWrapper = styled.header`
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 18px 28px;
+  padding: 38px;
   background-color: ${({ theme }) => theme.dark.quaternary};
   color: ${({ theme }) => theme.dark.primaryText};
   font-weight: 500;
+  transition: 0.6s;
+
+  ${breakpointsMediaQuerie({
+    md: css`
+      padding: 18px 28px;
+    `,
+  })};
 `;
 
 HeaderWrapper.Navigation = styled.div`
@@ -59,7 +67,7 @@ HeaderWrapper.RightSide = styled.nav`
 
   ${breakpointsMediaQuerie({
     md: css`
-      max-width: 360px;
+      max-width: 480px;
     `,
   })}
 

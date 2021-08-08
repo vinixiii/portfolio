@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.header`
   flex-wrap: wrap;
   padding: 38px;
   background-color: ${({ theme }) => theme.dark.quaternary};
-  color: ${({ theme }) => theme.dark.primaryText};
+  color: ${({ theme }) => theme.dark.secondaryText};
   font-weight: 500;
   transition: 0.6s;
 

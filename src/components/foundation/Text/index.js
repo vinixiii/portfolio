@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 export const TextStyleVariantsMap = {
   title: css`
@@ -49,7 +50,8 @@ export const TextStyleVariantsMap = {
 };
 
 const TextBase = styled.span`
-  ${({ variation }) => TextStyleVariantsMap[variation]}
+  ${({ variation }) => TextStyleVariantsMap[variation]};
+  ${propToStyle('marginTop')};
 `;
 
 export function Text({ tag, variation, children, ...props }) {

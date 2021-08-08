@@ -4,23 +4,32 @@ import { Grid } from '../src/components/foundation/layout/Grid';
 import { Text } from '../src/components/foundation/Text';
 
 export default function Home() {
+  ({ theme }) => console.log(theme);
   return (
     <>
       <Header />
       <Box style={{ height: '90vh' }}>
         <Grid.Container>
           <Grid.Row>
-            <Grid.Col>
-              <Text tag="p" variation="smallTitle">
+            <Grid.Col
+              display="flex"
+              flexDirection="column"
+              alignItems="flex-start"
+              justifyContent="center"
+            >
+              <Text tag="p" variation="smallTitle" style={{ color: '#e5e5e5' }}>
                 Olá!
               </Text>
-              <Text tag="p" variation="title">
+              <Text tag="p" variation="title" marginTop="14px">
                 Eu sou o Vinícius Figueiroa.
                 <br />
                 Desenvolvedor Front-end.
               </Text>
+              <hr />
             </Grid.Col>
-            <Grid.Col>Imagem</Grid.Col>
+            <Grid.Col>
+              <img src="./images/eu.png" />
+            </Grid.Col>
           </Grid.Row>
         </Grid.Container>
 

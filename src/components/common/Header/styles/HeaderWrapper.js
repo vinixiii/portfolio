@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { breakpointsMediaQuerie } from '../../../../theme/utils/breakpointsMediaQuerie';
 
 export const HeaderWrapper = styled.header`
+  width: 100%;
   min-height: 10vh;
   display: flex;
   align-items: center;

@@ -52,6 +52,10 @@ export const TextStyleVariantsMap = {
 const TextBase = styled.span`
   ${({ variation }) => TextStyleVariantsMap[variation]};
   ${propToStyle('marginTop')};
+
+  span {
+    color: ${({ theme }) => theme.dark.primary};
+  }
 `;
 
 export function Text({ tag, variation, children, ...props }) {

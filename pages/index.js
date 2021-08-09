@@ -1,5 +1,6 @@
 import { Button } from '../src/components/common/Button';
 import Card from '../src/components/common/Card';
+import { Footer } from '../src/components/common/Footer';
 import Header from '../src/components/common/Header';
 import { Box } from '../src/components/foundation/layout/Box';
 import { Grid } from '../src/components/foundation/layout/Grid';
@@ -211,6 +212,7 @@ export default function Home() {
           </Grid.Row>
         </Grid.Container>
       </Box>
+      <Footer />
     </>
   );
 }

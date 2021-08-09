@@ -11,7 +11,7 @@ export default function Header() {
         </HeaderWrapper.LeftSide>
         <HeaderWrapper.RightSide>
           <a href="#">Início</a>
-          <a href="#teste">Sobre mim</a>
+          <a href="#about-me">Sobre mim</a>
           <a href="#projects">Projetos</a>
           <a href="#contact">Contato</a>
         </HeaderWrapper.RightSide>

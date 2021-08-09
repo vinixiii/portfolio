@@ -1,10 +1,12 @@
 import styled, { css } from 'styled-components';
 import get from 'lodash/get';
 import { TextStyleVariantsMap } from '../../foundation/Text';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 const GhostButton = css`
   background: transparent;
   color: ${({ theme }) => theme.dark.secondaryText};
+  border: 1px solid ${({ theme }) => theme.dark.secondaryText};
 `;
 
 const DefaultButton = css`
@@ -20,6 +22,8 @@ export const Button = styled.a`
   padding: 16px 22px;
   text-decoration: none;
   cursor: pointer;
+
+  ${propToStyle('alignSelf')};
 
   ${TextStyleVariantsMap.smallestExceptionBold}
 

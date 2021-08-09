@@ -8,12 +8,11 @@ export const TextStyleVariantsMap = {
     line-height: ${({ theme }) => theme.typographyVariants.title.lineHeight};
     margin: 0;
   `,
-  paragraph: css`
-    font-size: ${({ theme }) => theme.typographyVariants.paragraph.fontSize};
-    font-weight: ${({ theme }) =>
-      theme.typographyVariants.paragraph.fontWeight};
-    line-height: ${({ theme }) =>
-      theme.typographyVariants.paragraph.lineHeight};
+  bigTitle: css`
+    font-size: ${({ theme }) => theme.typographyVariants.bigTitle.fontSize};
+    font-weight: ${({ theme }) => theme.typographyVariants.bigTitle.fontWeight};
+    line-height: ${({ theme }) => theme.typographyVariants.bigTitle.lineHeight};
+    margin: 0;
   `,
   smallTitle: css`
     font-size: ${({ theme }) => theme.typographyVariants.smallTitle.fontSize};
@@ -22,6 +21,13 @@ export const TextStyleVariantsMap = {
     line-height: ${({ theme }) =>
       theme.typographyVariants.smallTitle.lineHeight};
     margin: 0;
+  `,
+  paragraph: css`
+    font-size: ${({ theme }) => theme.typographyVariants.paragraph.fontSize};
+    font-weight: ${({ theme }) =>
+      theme.typographyVariants.paragraph.fontWeight};
+    line-height: ${({ theme }) =>
+      theme.typographyVariants.paragraph.lineHeight};
   `,
   smallParagraph: css`
     font-size: ${({ theme }) =>
@@ -52,6 +58,7 @@ export const TextStyleVariantsMap = {
 const TextBase = styled.span`
   ${({ variation }) => TextStyleVariantsMap[variation]};
   ${propToStyle('marginTop')};
+  ${propToStyle('marginBottom')};
 
   span {
     color: ${({ theme }) => theme.dark.primary};

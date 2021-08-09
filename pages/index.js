@@ -8,8 +8,14 @@ export default function Home() {
   ({ theme }) => console.log(theme);
   return (
     <>
-      <Box flex="1" display="flex" flexDirection="column">
-        <Header />
+      <Header />
+      <Box
+        minHeight="100vh"
+        id="home"
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+      >
         <Grid.Container>
           <Grid.Row>
             <Grid.Col
@@ -18,6 +24,10 @@ export default function Home() {
               alignItems="flex-start"
               justifyContent="center"
               value={{ xs: 12, md: 6 }}
+              marginBottom={{
+                xs: '42px',
+                sm: 'initial',
+              }}
             >
               <Text
                 tag="p"
@@ -44,7 +54,13 @@ export default function Home() {
                 LinkedIn
               </Button>
             </Grid.Col>
-            <Grid.Col value={{ xs: 12, md: 5 }}>
+            <Grid.Col
+              value={{ xs: 12, md: 5 }}
+              marginTop={{
+                xs: '42px',
+                sm: 'initial',
+              }}
+            >
               <img
                 style={{ display: 'block', margin: 'auto', maxWidth: '100%' }}
                 src="./images/eu.png"
@@ -53,7 +69,16 @@ export default function Home() {
           </Grid.Row>
         </Grid.Container>
       </Box>
-      {/* <Box>Oi</Box> */}
+      <Box style={{ backgroundColor: '#2B2E44' }} minHeight="100vh"></Box>
+      {/* <Box
+        flex="1"
+        display="flex"
+        flexDirection="column"
+        id="teste"
+        style={{ textAlign: 'center', backgroundColor: '#2B2E44' }}
+      >
+        <h1>Second Page</h1>
+      </Box> */}
     </>
   );
 }

@@ -37,6 +37,8 @@ const Col = styled.div`
   ${propToStyle('flexDirection')}
   ${propToStyle('alignItems')}
   ${propToStyle('justifyContent')}
+  ${propToStyle('marginTop')};
+  ${propToStyle('marginBottom')};
 
   hr {
     max-width: 400px;

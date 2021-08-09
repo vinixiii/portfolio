@@ -8,6 +8,7 @@ export const Box = styled.div`
   ${propToStyle('justifyContent')};
   ${propToStyle('flexDirection')};
   ${propToStyle('flexWrap')};
+  ${propToStyle('gap')};
   /* background-color: ${({ theme }) => theme.dark.secondary}; */
 
   /* section {

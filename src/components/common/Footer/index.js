@@ -8,7 +8,7 @@ export function Footer() {
       <FooterWrapper.Navigation>
         <FooterWrapper.LeftSide>
           <Text>
-            Desenvolvido com &#128149; por <span>Vinícius Figueiroa</span>.
+            Desenvolvido com &hearts; por <span>Vinícius Figueiroa</span>
           </Text>
         </FooterWrapper.LeftSide>
         <FooterWrapper.RightSide>

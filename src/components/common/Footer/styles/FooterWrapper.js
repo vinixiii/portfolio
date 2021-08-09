@@ -24,6 +24,7 @@ export const FooterWrapper = styled.footer`
 FooterWrapper.Navigation = styled.div`
   display: flex;
   align-items: center;
+  gap: 42px;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -51,12 +52,13 @@ FooterWrapper.Navigation = styled.div`
 
 FooterWrapper.LeftSide = styled.div`
   order: 1;
-  margin-right: 16px;
+  /* margin-right: 16px; */
   /* display: none; */
 
   ${breakpointsMediaQuerie({
     sm: css`
-      margin-bottom: 28px;
+      text-align: center;
+      /* margin-bottom: 28px; */
     `,
   })}
 `;

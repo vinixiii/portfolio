@@ -93,6 +93,10 @@ export default function Home() {
                 xs: '42px',
                 md: 'initial',
               }}
+              marginBottom={{
+                xs: '42px',
+                md: 'initial',
+              }}
             >
               <img
                 style={{ display: 'block', margin: 'auto', maxWidth: '100%' }}
@@ -126,7 +130,12 @@ export default function Home() {
                 pelo SENAI Informática e me especializando em Front-End com o
                 Bootcamp de Front-End Avançado da Alura!
               </Text>
-              <Button alignSelf="flex-end" ghost>
+              <Button
+                alignSelf="flex-end"
+                ghost
+                href="./curriculo.pdf"
+                download
+              >
                 <img
                   src="./images/download.svg"
                   alt="Ícone de uma seta apontada para baixo"
@@ -153,18 +162,12 @@ export default function Home() {
                 alignItems="center"
                 justifyContent="space-between"
                 flexWrap="wrap"
+                gap="42px"
               >
                 <Text tag="p" variation="title">
                   Projetos recentes
                 </Text>
-                <Button
-                  href="https://github.com/vinixiii"
-                  target="_blank"
-                  marginTop={{
-                    xs: '42px',
-                    md: 'initial',
-                  }}
-                >
+                <Button href="https://github.com/vinixiii" target="_blank">
                   <img src="./images/github.svg" alt="Logotipo do GitHub" />
                   GitHub
                 </Button>

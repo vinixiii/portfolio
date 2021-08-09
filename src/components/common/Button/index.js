@@ -24,6 +24,7 @@ export const Button = styled.a`
   cursor: pointer;
 
   ${propToStyle('alignSelf')};
+  ${propToStyle('marginTop')};
 
   ${TextStyleVariantsMap.smallestExceptionBold}
 

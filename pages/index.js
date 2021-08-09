@@ -1,4 +1,5 @@
 import { Button } from '../src/components/common/Button';
+import Card from '../src/components/common/Card';
 import Header from '../src/components/common/Header';
 import { Box } from '../src/components/foundation/layout/Box';
 import { Grid } from '../src/components/foundation/layout/Grid';
@@ -15,6 +16,7 @@ export default function Home() {
         display="flex"
         flexDirection="column"
         alignItems="center"
+        style={{ backgroundColor: '#23263A' }}
       >
         <Grid.Container>
           <Grid.Row>
@@ -107,7 +109,6 @@ export default function Home() {
               <Text
                 tag="p"
                 variation="title"
-                style={{ color: '#e5e5e5' }}
                 marginTop={{ xs: '42px', sm: 'initial' }}
               >
                 Um pouco sobre mim...
@@ -135,15 +136,81 @@ export default function Home() {
           </Grid.Row>
         </Grid.Container>
       </Box>
-      {/* <Box
-        flex="1"
+      <Box
+        id="projects"
+        minHeight="90vh"
         display="flex"
         flexDirection="column"
-        id="teste"
-        style={{ textAlign: 'center', backgroundColor: '#2B2E44' }}
+        alignItems="center"
+        style={{ backgroundColor: '#23263A' }}
       >
-        <h1>Second Page</h1>
-      </Box> */}
+        <Grid.Container>
+          <Grid.Row flexDirection="column">
+            <Grid.Col value={{ xs: 12, md: 12 }} marginTop="42px">
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="space-between"
+                flexWrap="wrap"
+              >
+                <Text tag="p" variation="title">
+                  Projetos recentes
+                </Text>
+                <Button
+                  href="https://github.com/vinixiii"
+                  target="_blank"
+                  marginTop={{
+                    xs: '42px',
+                    md: 'initial',
+                  }}
+                >
+                  <img src="./images/github.svg" alt="Logotipo do GitHub" />
+                  GitHub
+                </Button>
+              </Box>
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent={{
+                  xs: 'center',
+                  lg: 'space-between',
+                }}
+                flexWrap="wrap"
+              >
+                <Card
+                  image="./images/instalura.png"
+                  title="Instalura"
+                  repositoryLink="https://github.com/vinixiii/instalura"
+                  siteLink="https://instalura-vinixiii.vercel.app"
+                >
+                  Aplicação web clone do Instagram que foi desenvolvida com o
+                  objetivo de aplicar os conceitos da JAMStack utilizando
+                  Next.js e styled-components
+                </Card>
+                <Card
+                  image="./images/alurakut.png"
+                  title="Alurakut"
+                  repositoryLink="https://github.com/vinixiii/alurakut"
+                  siteLink="https://alurakut-vinixiii.vercel.app"
+                >
+                  Aplicação web clone Orkut, é possível fazer login com o
+                  GitHub, ver seus amigos e participar de comunidades!
+                </Card>
+                <Card
+                  image="./images/pomoup.png"
+                  title="Pomo.up"
+                  repositoryLink="https://github.com/vinixiii/pomo.up"
+                  siteLink="https://pomo-up.vercel.app"
+                >
+                  Aplicação web que combina a técnica de Pomodoro, que aumenta o
+                  foco e a produtividade, com exercícios físicos para o corpo e
+                  para os olhos
+                </Card>
+              </Box>
+            </Grid.Col>
+          </Grid.Row>
+        </Grid.Container>
+      </Box>
     </>
   );
 }

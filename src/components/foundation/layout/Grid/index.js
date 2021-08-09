@@ -30,6 +30,10 @@ const Row = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
+  ${propToStyle('display')}
+  ${propToStyle('justifyContent')}
+  ${propToStyle('flexWrap')}
+  ${propToStyle('flexDirection')}
 `;
 
 const Col = styled.div`

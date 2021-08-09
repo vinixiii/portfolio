@@ -5,8 +5,10 @@ export const Box = styled.div`
   ${propToStyle('minHeight')};
   ${propToStyle('flex')};
   ${propToStyle('display')};
+  ${propToStyle('justifyContent')};
   ${propToStyle('flexDirection')};
-  background-color: ${({ theme }) => theme.dark.secondary};
+  ${propToStyle('flexWrap')};
+  /* background-color: ${({ theme }) => theme.dark.secondary}; */
 
   /* section {
     height: 90vh;

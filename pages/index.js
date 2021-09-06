@@ -215,6 +215,59 @@ export default function Home() {
           </Grid.Row>
         </Grid.Container>
       </Box>
+      <Box
+        id="contact"
+        style={{ backgroundColor: '#2B2E44' }}
+        minHeight="90vh"
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+      >
+        <Grid.Container>
+          <Grid.Row flexWrap="wrap">
+            <Grid.Col
+              display="flex"
+              flexDirection="column"
+              alignItems="flex-start"
+              justifyContent="flex-start"
+              value={{ xs: 12, md: 5 }}
+            >
+              <Text
+                tag="p"
+                variation="title"
+                marginTop={{ xs: '42px', sm: 'initial' }}
+              >
+                Fique à vontade para entrar em contato comigo!
+              </Text>
+              <Button marginTop="42px" ghost>
+                <img
+                  src="./images/email.svg"
+                  alt="Ícone de uma seta apontada para baixo"
+                />
+                Clique aqui
+              </Button>
+            </Grid.Col>
+            <Grid.Col
+              display="flex"
+              value={{ xs: 12, md: 6 }}
+              marginTop={{
+                xs: '42px',
+                md: 'initial',
+              }}
+              marginBottom={{
+                xs: '42px',
+                md: 'initial',
+              }}
+            >
+              <img
+                style={{ display: 'block', margin: 'auto', maxWidth: '100%' }}
+                src="./images/illustration02.svg"
+                alt="Ilustração de um garoto em pé olhando para um página de internet"
+              />
+            </Grid.Col>
+          </Grid.Row>
+        </Grid.Container>
+      </Box>
       <Footer />
     </>
   );
